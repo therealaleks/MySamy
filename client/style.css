@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: #E2F6FF;
+	height: 100%;
+	width: 100%;
+	margin:0;
+}
+
+.ressource{
+	
+}
+
+.logo {
+	
+	z-index: 0;
+	font-size: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-left: 10px;
+	margin-top: 0px;
+	color:#2170C4;
+	font-weight: 200;
+	font-family: 'Arial';
+}
+
+.side {
+	
+	/* //padding: 5px; */
+	
+	position: fixed;
+	height: 100%;
+	/* //background: #903C3D; */
+	width: 550px;
+	z-index: 1;
+	right: -550px;
+	
+}
+
+.link-container {
+	
+	display: grid;
+	height: 100%;
+	width: 100%;
+	
+	grid-template-columns: 100% ;
+	grid-template-rows: 25% 25% 25% 25% ;
+	
+	grid-template-areas: 
+
+		"link1"
+		"link2"
+		"link3"
+		"link4"
+
+		;
+}
+
+.link{
+	
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	
+	position:relative;
+	top: 0px;
+	
+	color:aliceblue;
+	
+	box-shadow: 10px 5px 10px grey;
+	
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top:0px;
+	margin-bottom:5px;
+	padding-left: 30px;
+	padding-top: 0px;
+	
+	grid-area: link1;
+	
+	justify-self: stretch;
+	background:#17E09E;
+	
+	border-bottom-width: 10px;
+	border-radius: 30px;
+	overflow: hidden;
+	
+}
+
+.main{
+	
+	box-shadow: 5px 0px 30px grey;
+	background:#CDEAFF;
+	position:relative;
+	margin-right: 0px;
+	display: block;
+	height: 100%;
+
+}
+
+.hub {
+	
+	//outline: 4px solid #B51F22;
+	//outline-offset: 30px;
+	//outline-style: groove;
+	
+	align-content: center;
+	
+	position:relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	height: 470px;
+	width: 400px;
+	
+	box-shadow: 5px 10px 20px grey;
+	
+	background:#3D81D1;
+	
+	border-radius: 20px;
+}
+
+.container{
+	display: grid;
+	height: 100%;
+	
+	grid-template-columns: auto auto 40px auto auto ;
+	grid-template-rows: 65% 15% 20% ;
+	
+	grid-template-areas: 
+		"avatar avatar avatar avatar avatar"
+		"empty empty empty empty empty"
+		"leftmargin mic gap pause rightmargin";
+}
+
+.samy {
+	
+	overflow: visible;
+	padding-top: 5px;
+	justify-self: center;
+	grid-area: avatar;
+	max-width: 300px;
+	//background:#000000;
+}
+
+.button1 {
+	justify-self: center;
+	align-content: center;
+	grid-area: mic;
+	max-width: 73px;
+	//background: #489C14;
+}
+
+.button2 {
+	justify-self: center;
+	align-content: center;
+	grid-area: pause;
+	max-width: 70px;
+	//background: #489C14;
+}
+
+.textbar {
+	justify-self: center;
+	grid-area: empty;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 90%;
+	text-align: center;
+	
+
+}
+.speech-bubble {
+	position: fixed;
+	background: #00aabb;
+	border-radius: .4em;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+	opacity:1.0;
+
+	max-width: 300px;
+	height: auto;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding: 20px;
+	color:aliceblue;
+	box-shadow: 7px 7px 20px grey;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 69px solid transparent;
+	border-left-color: #00aabb;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -34.5px;
+	margin-right: -69px;
+}
+
+.speech-bubble-resp {
+	box-shadow: 7px 7px 20px grey;
+	position: fixed;
+	z-index: 1;
+	right: 575px;
+	background: #00aabb;
+	border-radius: .4em;
+	min-height: 200px;
+	color: aliceblue;
+	width: 250px;
+	margin-top: 10px;
+	padding:20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	opacity:0;
+}
+
+.speech-bubble-resp:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 69px solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -34.5px;
+	margin-left: -69px;
+}
+
+::-webkit-input-placeholder {
+
+    text-align: center;
+}
+
+.brand {
+	display: inline;
+	font-family: 'Montserrat'
+	//font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 60px;
+	
+}
+
+.brand2 {
+	margin: 0;
+	display: inline;
+	font-family: 'Montserrat'
+	//font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 30px;
+	
+}
+
+.brand3 {
+	display: fixed;
+	font-family: 'Montserrat';
+	/*left: 50px;
+	bottom: -50px;*/
+		
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+	color: #0C67D7;
+}
+
+.brand4 {
+	display: inline;
+	font-family: 'Montserrat'
+	text-align: left;
+	font-size: 15px;
+	color: #C02005;
+}
