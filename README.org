@@ -1,10 +1,10 @@
-# My Samy
+* My Samy
 A web app made for McHacks 7 designed to be an emotionally responsive talking companion for marginalized children. 
-
-[[Samy.PNG]]
 
 * What it does
 Samy can understand and relate to children, as well as offer them relevent ressources such as bullying prevention services, psychological aid, or educational tools.
+
+[[Samy.PNG]]
 
 * Technologies used
 ** IBM Watson NLU
